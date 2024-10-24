@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Counter > should render properly 1`] = `
+"<p>Current value is: 0</p>
+<button>Increase</button>
+<button>Decrease</button>"
+`;
