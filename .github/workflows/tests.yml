@@ -8,6 +8,9 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./vue-unit-test-github-actions
     
     steps:
       - name: Setup Node
@@ -15,9 +18,7 @@ jobs:
         with:
           node-version: 18.x
       - name: Install Deps
-        run: |
-          cd vue-unit-test-github-actions/vue-unit-test-github-actions
-          npm install
+        run: npm install
       - name: Run Tests
         run: npm run test:unit
 
