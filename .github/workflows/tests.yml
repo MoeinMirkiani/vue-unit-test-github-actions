@@ -7,11 +7,11 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     
     steps:
       - name: Setup Node
-        uses: action/setup-node@v2
+        uses: actions/setup-node@v2
         with:
           node-version: 18.19
       - name: Install Deps
