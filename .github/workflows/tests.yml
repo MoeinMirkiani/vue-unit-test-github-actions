@@ -16,7 +16,7 @@ jobs:
           node-version: 18.x
       - name: Install Deps
         run: |
-          npm init -y
+          cd vue-unit-test-github-actions/vue-unit-test-github-actions
           npm install
       - name: Run Tests
         run: npm run test:unit
