@@ -10,14 +10,16 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - uses: actions/checkout@v4.2.2
+      - name: Run checkout
+        uses: actions/checkout@v4.2.2
+
       - name: Setup Node
         uses: actions/setup-node@v4.1.0
         with:
           node-version: 18.x
+
       - name: Install Deps
         run: npm install
+
       - name: Run Tests
         run: npm run test:unit
-
-
