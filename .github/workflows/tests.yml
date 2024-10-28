@@ -11,13 +11,11 @@ jobs:
     
     steps:
       - name: Setup Node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4.1.0
         with:
-          node-version: 18.19
+          node-version: 18.x
       - name: Install Deps
-        run: |
-          cd ../../
-          npm install
+        run: npm install
       - name: Run Tests
         run: npm run test:unit
 
