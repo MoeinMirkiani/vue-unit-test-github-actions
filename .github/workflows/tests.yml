@@ -15,7 +15,9 @@ jobs:
         with:
           node-version: 18.19
       - name: Install Deps
-        run: npm i
+        run: |
+          cd ../../
+          npm install
       - name: Run Tests
         run: npm run test:unit
 
