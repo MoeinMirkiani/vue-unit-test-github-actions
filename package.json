@@ -8,6 +8,7 @@
         "build": "vite build",
         "preview": "vite preview",
         "test:unit": "vitest",
+        "lint:show": "eslint",
         "lint:fix": "eslint --fix"
     },
     "dependencies": {
