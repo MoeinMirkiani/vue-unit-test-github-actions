@@ -8,7 +8,7 @@ import SupportIcon from './icons/IconSupport.vue'
 </script>
 
 <template>
-  <WelcomeItem :welcome-text="'Hello'">
+  <WelcomeItem :welcomeText="'Hello'">
     <template #icon>
       <DocumentationIcon />
     </template>
