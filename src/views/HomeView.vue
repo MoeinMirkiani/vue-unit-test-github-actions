@@ -1,9 +1,8 @@
 <template>
     <main>
-        <Counter />
+        Home View
     </main>
 </template>
 
 <script setup>
-import Counter from "@/components/Counter.vue";
 </script>
