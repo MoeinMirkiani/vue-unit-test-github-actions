@@ -21,11 +21,8 @@ jobs:
       - name: Install deps
         run: npm install
 
-      - name: Display Linting Errors
-        run: npm run lint:show
-
       - name: Fix Lint Errors
         run: npm run lint:fix
 
-      - name: Re-run Lint to Display Unresolved Errors
+      - name: Run Lint
         run: npm run lint:show
